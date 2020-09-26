@@ -11,13 +11,9 @@ class School
    roster[grade] << student
   end 
 
-  def grade(grade)
-    roster.detect do |student, grade| 
-      if grade == grade
-        return student 
-      end 
-    end 
-  end 
+def grade(student_grade)
+    roster[student_grade]
+  end
 
 
 def sort
